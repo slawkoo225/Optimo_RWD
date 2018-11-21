@@ -104,3 +104,70 @@ html, body {
       margin:0 auto;
       padding-top:20px;
   }
+
+
+  /* --------------RWD---------------- */
+  @media only screen and (min-width:583px) and (max-width:900px) {
+      .col1, .col2 {
+          float:none;
+          display:block;
+          width:100%;
+      }
+
+      .col2 {
+          margin-top:50px;
+          display: flex;
+          justify-content: flex-start;
+          margin-left:30px;
+      }
+
+      .col3 {
+          float:left;
+      }
+
+      .col50 {
+          float:left;
+          width:50%;
+      }
+
+      .rectangle {
+          background-color:#C83838;
+      }
+  }
+
+  @media only screen and (max-width:583px) {
+      .col50 {
+          width:100%;
+          float:none;
+      }
+
+      .col1, .col2, .col3 {
+          float:none;
+          display:block;
+          width:100%;
+      }
+
+      .col2, .col3 {
+          margin-top:50px;
+      }
+
+      .col2 {
+          display:flex;
+          justify-content: flex-start;
+          margin-left:30px;
+      }
+
+      .container {
+          height:auto;
+      }
+
+      .rectangle {
+          background-color:#0101FF;
+      }
+  }
+
+  @media only screen and (max-width:250px) {
+      .rectangle {
+          width:100%;
+      }
+  }
