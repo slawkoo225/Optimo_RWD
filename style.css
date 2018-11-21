@@ -49,6 +49,7 @@ html, body {
       margin-left:30px;
       transform:rotate(45deg);
       border:3px solid #000;
+      animation:rotateBox 4s ease-out infinite alternate;
   }
 
   .box:nth-child(1) {
@@ -91,6 +92,7 @@ html, body {
       height: 50px;
       border-radius: 50%;
       background-color:#018080;
+      animation:jumpingCircle 0.5s ease-out infinite alternate;
   }
 
   /* -------------COL3-------------- */
@@ -178,4 +180,14 @@ html, body {
   @keyframes scaleAnimation {
       from { transform: scale(0.8); border-radius:20%; }
       to { transform: scale(1);  }
+  }
+
+  @keyframes jumpingCircle {
+      from { transform:translate3d(0,0,0); }
+      to { transform:translate3d(0,-20%,0); }
+  }
+
+  @keyframes rotateBox {
+      from { transform:rotate(45deg); }
+      to { transform:rotate(360deg); }
   }
