@@ -164,7 +164,7 @@ html, body {
       }
 
       .container {
-          height:auto;
+            overflow: auto;
       }
 
       .rectangle {
