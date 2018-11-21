@@ -103,6 +103,8 @@ html, body {
       background-color:#FFF;
       margin:0 auto;
       padding-top:20px;
+      transition:background-color 1s ease-out;
+      animation: scaleAnimation 3s infinite alternate;
   }
 
 
@@ -170,4 +172,10 @@ html, body {
       .rectangle {
           width:100%;
       }
+  }
+
+
+  @keyframes scaleAnimation {
+      from { transform: scale(0.8); }
+      to { transform: scale(1); }
   }
