@@ -65,6 +65,7 @@ html, body {
       display:flex;
       justify-content: center;
       text-align: center;
+      margin-top:60px;
   }
 
   .equal {
@@ -107,6 +108,7 @@ html, body {
       padding-top:20px;
       transition:background-color 1s ease-out;
       animation: scaleAnimation 3s infinite alternate;
+      font-size:25px;
   }
 
 
